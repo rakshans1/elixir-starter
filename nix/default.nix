@@ -7,6 +7,6 @@ with pkgs;
 buildEnv {
   name = "builder";
   paths = [
-    beam.packages.erlangR24.elixir_1_13
+    beam.packages.erlangR25.elixir_1_14
   ];
 }
