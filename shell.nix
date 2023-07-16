@@ -22,7 +22,7 @@ let
     export HEX_HOME=$PWD/.nix-hex
     # make hex from Nixpkgs available
     # `mix local.hex` will install hex into MIX_HOME and should take precedence
-    export MIX_PATH="${beam.packages.erlangR25.hex}/lib/erlang/lib/hex/ebin"
+    export MIX_PATH="${beam.packages.erlangR26.hex}/lib/erlang/lib/hex/ebin"
     export PATH=$MIX_HOME/bin:$HEX_HOME/bin:$PATH
     export LANG=C.UTF-8
     # keep your shell history in iex
