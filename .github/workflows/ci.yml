@@ -18,10 +18,11 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@v4
-      - name: Run `nix build`
-        run: nix flake check
-      - name: "Run tests"
+      - name: Run flakes check
         run: |
+          nix flake check
           nix develop -c echo OK
+      - name: Run tests
+        run: |
           nix develop -c elixir --version
           nix develop -c mix hex.info
