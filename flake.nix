@@ -13,13 +13,13 @@
           inherit system;
         };
 
-        inherit (pkgs) darwin inotify-tools terminal-notifier;
-        inherit (pkgs.lib) optional;
+        inherit (pkgs) inotify-tools terminal-notifier;
+        inherit (pkgs.lib) optionals;
         inherit (pkgs.stdenv) isDarwin isLinux;
 
-        linuxDeps = optional isLinux [ inotify-tools ];
-        darwinDeps = optional isDarwin [ terminal-notifier ]
-          ++ (with darwin.apple_sdk.frameworks; [
+        linuxDeps = optionals isLinux [ inotify-tools ];
+        darwinDeps = optionals isDarwin [ terminal-notifier ]
+          ++ (with pkgs.darwin.apple_sdk.frameworks; optionals isDarwin [
           CoreFoundation
           CoreServices
         ]);
