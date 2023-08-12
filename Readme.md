@@ -17,7 +17,7 @@ OTP:    26.0.2
 `nix flake show https://github.com/rakshans1/elixir-starter`
 
 ```
-github:rakshans1/elixir-starter/827e2b21a5435de4d8b780c083bbaa3025e1bb6b
+github:rakshans1/elixir-starter/0acf13f351f2de2c44eb0690c9824f8ac3776ad1
 └───devShells
     ├───aarch64-darwin
     │   └───default: development environment 'nix-shell'
