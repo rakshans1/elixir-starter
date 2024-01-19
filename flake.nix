@@ -29,7 +29,7 @@
         devShells = {
           default = pkgs.mkShell {
             packages = with pkgs;  [
-              beam.packages.erlangR26.elixir_1_15
+              beam.packages.erlangR26.elixir_1_16
             ] ++ linuxDeps ++ darwinDeps;
             shellHook = ''
               # this allows mix to work on the local directory
