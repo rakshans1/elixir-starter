@@ -10,8 +10,8 @@ Setup direnv with [shell](https://direnv.net/docs/hook.html)
 Run `direnv allow`
 
 ```
-Elixir: 1.16.0
-OTP:    26.2.1
+Elixir: 1.17.0
+OTP:    27
 ```
 
 `nix flake show https://github.com/rakshans1/elixir-starter`
