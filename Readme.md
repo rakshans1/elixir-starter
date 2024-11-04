@@ -10,7 +10,7 @@ Setup direnv with [shell](https://direnv.net/docs/hook.html)
 Run `direnv allow`
 
 ```
-Elixir: 1.17.0
+Elixir: 1.17.3
 OTP:    27
 ```
 
