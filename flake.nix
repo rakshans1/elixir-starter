@@ -18,11 +18,7 @@
         inherit (pkgs.stdenv) isDarwin isLinux;
 
         linuxDeps = optionals isLinux [ inotify-tools ];
-        darwinDeps = optionals isDarwin [ terminal-notifier ]
-          ++ (with pkgs.darwin.apple_sdk.frameworks; optionals isDarwin [
-          CoreFoundation
-          CoreServices
-        ]);
+        darwinDeps = optionals isDarwin [ terminal-notifier ];
 
       in
       {
